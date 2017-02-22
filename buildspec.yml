@@ -8,3 +8,6 @@ phases:
   build:
     commands:
       - serverless deploy
+  post_build:
+    commands:
+      - . ./test.sh
