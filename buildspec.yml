@@ -1,19 +1,14 @@
-version: 1.0.0
+version: 0.1
 
 phases:
   install:
     commands:
-      - echo Installing Mocha...
+      - npm install
       - npm install -g mocha
-  pre_build:
-    commands:
-      - echo Installing source NPM dependencies...
-      - npm install unit.js
+      - npm install -g serverless
   build:
     commands:
-      - echo Build started on `date`
-      - echo Compiling the Node.js code
-      - mocha getAlerts.js
+      - serverless deploy
   post_build:
     commands:
-      - echo Build completed on `date`
+      - npm test
