@@ -1,0 +1,26 @@
+{
+  "name": "alertshistory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/startlingnaveen/AlertsHistory.git"
+  },
+  "author": "Naveen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/startlingnaveen/AlertsHistory/issues"
+  },
+  "homepage": "https://github.com/startlingnaveen/AlertsHistory#readme"
+}

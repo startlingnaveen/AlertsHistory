@@ -1,0 +1,13 @@
+version: 1.0.0
+phases:
+  install:
+    commands:
+      - npm install
+      - npm install -g mocha
+      - npm install -g serverless
+  build:
+    commands:
+      - serverless deploy
+  post_build:
+    commands:
+      - npm test
