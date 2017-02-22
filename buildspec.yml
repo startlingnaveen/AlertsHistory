@@ -1,4 +1,5 @@
 version: 1.0.0
+
 phases:
   install:
     commands:
@@ -10,4 +11,7 @@ phases:
       - serverless deploy
   post_build:
     commands:
-      - . ./test.sh
+      - npm test
+artifacts:
+  files:
+    - handler.js
